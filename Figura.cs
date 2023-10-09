@@ -9,10 +9,11 @@ internal abstract class Figura
   protected Color _color;
 
   public abstract double GetArea();
-
+  public void setColor(Color c)=>_color = c;
+  public string getColor()=>_color.ToString();
   public override string ToString()
         {
-            return $"FIGURA {GetType().Name.ToUpper()}\n" + $"- Color: Color [A={_color.A}, R={_color.R}, G={_color.G}, B={_color.B}]";
+            return $"FIGURA {GetType().Name.ToUpper()}";
                   
         }
 }

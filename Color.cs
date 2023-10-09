@@ -16,5 +16,10 @@ namespace P2_2_Figuras
             G = g;
             B = b;
         }
+        public string ToString()
+        {
+            return $"[A={A}, R={R}, G={G}, B={B}]";
+                  
+        }
     }
 }

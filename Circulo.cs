@@ -18,6 +18,6 @@ namespace P2_2_Figuras;
 
         public override string ToString()
         {
-            return $"Círculo - Radio: {_radio}, Color: {_color}";
+           return base.ToString() + $"\n- Lado: {_radio}";
         }
     }
