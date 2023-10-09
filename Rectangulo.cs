@@ -1,5 +1,6 @@
+using System.Drawing;
 namespace P2_2_Figuras;
-{
+
 internal class Rectangulo : Figura
     {
         private double _base;
@@ -22,4 +23,3 @@ internal class Rectangulo : Figura
             return $"Rectángulo - Base: {_base}, Altura: {_altura}, Color: {_color}";
         }
     }
-}

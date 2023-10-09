@@ -1,5 +1,6 @@
+using System.Drawing;
 namespace P2_2_Figuras;
-{
+
     internal class Circulo : Figura
     {
         private double _radio;
@@ -20,4 +21,3 @@ namespace P2_2_Figuras;
             return $"Círculo - Radio: {_radio}, Color: {_color}";
         }
     }
-}

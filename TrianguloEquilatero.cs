@@ -1,5 +1,6 @@
+using System.Drawing;
 namespace P2_2_Figuras;
-{
+
     internal class TrianguloEquilatero : Figura
     {
         private double _lado;
@@ -20,4 +21,3 @@ namespace P2_2_Figuras;
             return $"Triángulo Equilátero - Lado: {_lado}, Color: {_color}";
         }
     }
-}
