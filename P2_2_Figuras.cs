@@ -15,24 +15,26 @@ public class P2_2_Figuras
              List<Figura> listaFiguras = new List<Figura>();
 
             // Crear 6 instancias de figuras distintas y agregarlas a la lista
-            Color colorRojo = new Color(255, 0, 0);
-            Color colorAzul = new Color(0, 0, 255);
-            Color colorVerde = new Color(0, 255, 0);
+            Color color1 = new Color(255, 0, 0,32);
+            Color color2 = new Color(36,0, 0, 255);
+            Color color3 = new Color(0, 255, 28,0);
             
-            Figura rectangulo = new Rectangulo(colorRojo, 5, 10);
-            Figura circulo = new Circulo(colorAzul, 7);
-            Figura triangulo = new TrianguloEquilatero(colorVerde, 8);
+            Figura rectangulo = new Rectangulo(color1, 5, 10);
+            Figura circulo = new Circulo(color2, 7);
+            Figura triangulo = new TrianguloEquilatero(color3, 8);
 
             listaFiguras.Add(rectangulo);
             listaFiguras.Add(circulo);
             listaFiguras.Add(triangulo);
 
-            // Mostrar cada figura y su área
+            
+            
             Console.WriteLine("Figuras y sus áreas:");
             foreach (var figura in listaFiguras)
             {
+                Console.WriteLine("_________________________");
                 Console.WriteLine(figura.ToString());
-                Console.WriteLine($"Área: {figura.GetArea()}\n");
+                Console.WriteLine($"- Área: {figura.GetArea():F2}\n");
             }
     }
 }

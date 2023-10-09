@@ -10,4 +10,9 @@ internal abstract class Figura
 
   public abstract double GetArea();
 
+  public override string ToString()
+        {
+            return $"FIGURA {GetType().Name.ToUpper()}\n" + $"- Color: Color [A={_color.A}, R={_color.R}, G={_color.G}, B={_color.B}]";
+                  
+        }
 }
